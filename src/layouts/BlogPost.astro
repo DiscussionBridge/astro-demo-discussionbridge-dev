@@ -2,6 +2,7 @@
 import Discussion from "astro-discussion-bridge/Discussion.astro";
 import DiscussionRelations from "astro-discussion-bridge/DiscussionRelations.astro";
 import DiscussionSource from "astro-discussion-bridge/DiscussionSource.astro";
+import SocialLinks from "../components/SocialLinks.astro";
 
 interface Props {
   commentsDisplay?: "simple" | "full" | "fullInteractive";
@@ -63,6 +64,7 @@ const formattedDate = new Intl.DateTimeFormat("en", {
         topicUrl={Astro.props.topicUrl}
       />
     </main>
+    <footer><SocialLinks /></footer>
   </body>
 </html>
 
@@ -166,6 +168,8 @@ const formattedDate = new Intl.DateTimeFormat("en", {
   article {
     margin-block-start: 3rem;
   }
+
+  footer { display: flex; justify-content: center; padding: 1.25rem 1rem 2rem; border-block-start: 1px solid #d9d6cf; }
 
   @media (prefers-color-scheme: dark) {
     body {

@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import DiscussionNavigation from "astro-discussion-bridge/DiscussionNavigation.astro";
 import type { DiscussionNavigationManifest } from "astro-discussion-bridge";
+import SocialLinks from "../components/SocialLinks.astro";
 
 const posts = await getCollection("blog");
 const navigationManifest = {
@@ -86,6 +87,7 @@ const navigationManifest = {
       </p>
       <DiscussionNavigation manifest={navigationManifest} />
     </main>
+    <footer><SocialLinks /></footer>
   </body>
 </html>
 
@@ -144,6 +146,8 @@ const navigationManifest = {
   a {
     color: #245f73;
   }
+
+  footer { display: flex; justify-content: center; padding: 1.25rem 1rem 2rem; border-block-start: 1px solid #d9d6cf; }
 
   @media (max-width: 640px) {
     .site-header {
