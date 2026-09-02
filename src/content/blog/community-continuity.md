@@ -10,6 +10,8 @@ contentLens: "impact"
 sectionId: "discussion-bridge-core"
 discussionCommentsDisplay: "simple"
 discussionSync: false
+discourseTopicId: 37
+discourseTopicUrl: "https://forum.discussionbridge.dev/t/every-connection-has-a-job/37"
 ---
 
 # Community Continuity With DiscussionBridge
