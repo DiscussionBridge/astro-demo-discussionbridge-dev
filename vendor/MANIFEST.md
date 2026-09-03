@@ -2,7 +2,7 @@
 
 | File | Role | SHA-256 | Length |
 | --- | --- | --- | ---: |
-| `astro-discussion-bridge-0.1.0-alpha.20260902.4.tgz` | Qualified reduced Astro adapter prerelease input with durable publication-operation state and stable feed synchronization | `dc7d99796223915ecc13b6df11287416adca01b046ec62108bb260b67b5a0cc6` | 42672 |
+| `astro-discussion-bridge-0.1.0-alpha.20260903.5.tgz` | Qualified reduced Astro adapter prerelease input with two-phase durable publication-operation state and stable feed synchronization | `cb7fe059ee91dd6fab79bafca938d942a8f8a28811f721511cf9de8d75935824` | 42834 |
 
 The archive contains 39 members (158,376 unpacked bytes), has npm SHA-1
 `2d78102be5481b51ae3bcf1f097a670fe9ff93ab`, and npm integrity
