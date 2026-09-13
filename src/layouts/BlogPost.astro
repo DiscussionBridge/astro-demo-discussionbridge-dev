@@ -3,7 +3,7 @@ import Discussion from "astro-discussion-bridge/Discussion.astro";
 import SocialLinks from "../components/SocialLinks.astro";
 
 interface Props {
-  commentsDisplay?: "simple" | "full" | "fullInteractive";
+  commentsDisplay?: "simple" | "full" | "interactive" | "fullInteractive";
   description: string;
   embedUrl?: string;
   frontmatter?: Record<string, unknown>;

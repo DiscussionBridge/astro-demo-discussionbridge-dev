@@ -2,15 +2,15 @@
 
 | File | Role | SHA-256 | Length |
 | --- | --- | --- | ---: |
-| `astro-discussion-bridge-0.1.0-alpha.20260903.6.tgz` | Qualified reduced Astro adapter prerelease input with serialized two-phase durable publication-operation state and stable feed synchronization | `ae0cc18fafd1d074793c92b0ed6f7db9cf6a53a1b0f54adfa85db1f93170f059` | 43077 |
+| `astro-discussion-bridge-0.2.0-alpha.19.tgz` | Alpha.19 Astro adapter with canonical Interactive output and historical `fullInteractive` input compatibility | `1e4d7eaa4f02790ff262f9b279d428df2bf9fc5d286ade287912b5e5df277140` | 43930 |
 
-The archive contains 39 members (158,376 unpacked bytes), has npm SHA-1
-`2d78102be5481b51ae3bcf1f097a670fe9ff93ab`, and npm integrity
-`sha512-VrvuXVz07jtx3VeP/+Cl00EC4ofcdCBh81Q7SLI0/F3WjQszfjwKeFuNqqZr+O4sZD9IWKu6yuE5y42wxD/Q5w==`.
+The archive contains 43 members (163,905 unpacked bytes), has npm SHA-1
+`f7ee337d6942f39b3689867b5dea7a87dd0ce733`, and npm integrity
+`sha512-um3XsNQEG7JUC9FgyIpVy2GlYNe6CM10sG4mWN6WfVjiGJtYVOk2YU2+WDyRpYCyZ7s6a/lnt2Q/HC1lytpNjg==`.
 
 It is bound to immutable adapter source commit
-`5f873f78eb4aa79affc1895b352f3a45fe97a560` (tree
-`e4bd52c73ee3cef295d8cae81e2db60e3cf06308`). A fresh `npm pack` from that
+`b52a0999f567269805ba5ffa27faf3f40ed03688` (tree
+`9878569eec34eff17a259272abfd3c463e7d84b7`). A fresh `npm pack` from that
 commit reproduced the exact SHA-256, npm SHA-1/integrity, member count, and
 packed/unpacked sizes above. This manifest does not claim publication or
 release acceptance.

@@ -7,7 +7,7 @@ const discussionFields = {
   discourseTopicUrl: z.string().url().optional(),
   discussionImportedFrom: z.string().url().optional(),
   discussionEmbedUrl: z.string().url().optional(),
-  discussionCommentsDisplay: z.enum(["simple", "full", "fullInteractive"]).optional(),
+  discussionCommentsDisplay: z.enum(["simple", "full", "interactive", "fullInteractive"]).optional(),
   discussionSourceMode: z.enum(["astro-managed", "discourse-imported", "discourse-managed"]).optional(),
   discussionSourceTags: z.union([z.string(), z.array(z.string())]).optional(),
   discussionSourceAuthorUsername: z.string().optional(),
