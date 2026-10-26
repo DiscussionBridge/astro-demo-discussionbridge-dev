@@ -1,8 +1,12 @@
 ---
 import { getCollection } from "astro:content";
+import GoogleAnalytics from "../components/GoogleAnalytics.astro";
+import SocialMetadata from "../components/SocialMetadata.astro";
 import SocialLinks from "../components/SocialLinks.astro";
 
 const posts = await getCollection("blog");
+const title = "DiscussionBridge for Astro Demo";
+const description = "Plain Astro demo for DiscussionBridge.";
 ---
 
 <!doctype html>
@@ -10,8 +14,10 @@ const posts = await getCollection("blog");
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>DiscussionBridge for Astro Demo</title>
-    <meta name="description" content="Plain Astro demo for DiscussionBridge." />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <SocialMetadata {title} {description} />
+    <GoogleAnalytics />
   </head>
   <body>
     <header class="site-header">

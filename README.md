@@ -6,11 +6,14 @@ This repository owns the plain Astro DiscussionBridge demo. It builds and
 deploys independently as a Cloudflare Worker with static assets.
 
 The pinned adapter artifact is
-`vendor/astro-discussion-bridge-0.1.0-alpha.20260903.6.tgz`. It contains 39
-members, is 42,672 bytes, and its SHA-256 is
-`cb7fe059ee91dd6fab79bafca938d942a8f8a28811f721511cf9de8d75935824`.
+`vendor/astro-discussion-bridge-0.2.0-alpha.20.tgz`. It contains 43 members, is
+43,930 bytes, and its SHA-256 is
+`b63b62a40a1283d9b333f1a35c7b44da3976f029c8b2b9548ad2e0388d5f82f9`.
 This replaces the rejected clipping-era adapter estate. Publication and
 release acceptance remain separate gates.
+
+Every rendered page includes the DiscussionBridge Google Analytics property
+`G-K9SYR7QENF` through the shared Astro head component.
 
 ```powershell
 npm ci

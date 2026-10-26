@@ -1,5 +1,7 @@
 ---
 import Discussion from "astro-discussion-bridge/Discussion.astro";
+import GoogleAnalytics from "../components/GoogleAnalytics.astro";
+import SocialMetadata from "../components/SocialMetadata.astro";
 import SocialLinks from "../components/SocialLinks.astro";
 
 interface Props {
@@ -18,6 +20,7 @@ const formattedDate = new Intl.DateTimeFormat("en", {
   dateStyle: "long",
   timeZone: "UTC",
 }).format(Astro.props.pubDate);
+const pageTitle = `${Astro.props.title} | DiscussionBridge for Astro Demo`;
 ---
 
 <!doctype html>
@@ -25,8 +28,10 @@ const formattedDate = new Intl.DateTimeFormat("en", {
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{Astro.props.title} | DiscussionBridge for Astro Demo</title>
+    <title>{pageTitle}</title>
     <meta name="description" content={Astro.props.description} />
+    <SocialMetadata title={pageTitle} description={Astro.props.description} />
+    <GoogleAnalytics />
   </head>
   <body>
     <header class="site-header">
