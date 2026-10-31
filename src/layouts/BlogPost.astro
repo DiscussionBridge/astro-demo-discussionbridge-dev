@@ -1,6 +1,5 @@
 ---
 import Discussion from "astro-discussion-bridge/Discussion.astro";
-import GoogleAnalytics from "../components/GoogleAnalytics.astro";
 import SocialMetadata from "../components/SocialMetadata.astro";
 import SocialLinks from "../components/SocialLinks.astro";
 
@@ -31,7 +30,6 @@ const pageTitle = `${Astro.props.title} | DiscussionBridge for Astro Demo`;
     <title>{pageTitle}</title>
     <meta name="description" content={Astro.props.description} />
     <SocialMetadata title={pageTitle} description={Astro.props.description} />
-    <GoogleAnalytics />
   </head>
   <body>
     <header class="site-header">

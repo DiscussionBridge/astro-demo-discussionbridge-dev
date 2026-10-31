@@ -1,9 +1,12 @@
+import analytics from '@codeworkslabs/astro-analytics';
+import { analyticsOptions } from './analytics.config.mjs';
 import { defineConfig } from "astro/config";
 import discussionBridge from "astro-discussion-bridge";
 
 export default defineConfig({
   site: "https://astro.demo.discussionbridge.dev",
   integrations: [
+    analytics(analyticsOptions),
     discussionBridge({
       provider: "discourse",
       preset: "astro",

@@ -1,6 +1,5 @@
 ---
 import { getCollection } from "astro:content";
-import GoogleAnalytics from "../components/GoogleAnalytics.astro";
 import SocialMetadata from "../components/SocialMetadata.astro";
 import SocialLinks from "../components/SocialLinks.astro";
 
@@ -17,7 +16,6 @@ const description = "Plain Astro demo for DiscussionBridge.";
     <title>{title}</title>
     <meta name="description" content={description} />
     <SocialMetadata {title} {description} />
-    <GoogleAnalytics />
   </head>
   <body>
     <header class="site-header">

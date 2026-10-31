@@ -18,7 +18,8 @@
   },
   "dependencies": {
     "astro": "^7.4.2",
-    "astro-discussion-bridge": "file:vendor/astro-discussion-bridge-0.2.0-alpha.20.tgz"
+    "astro-discussion-bridge": "file:vendor/astro-discussion-bridge-0.2.0-alpha.20.tgz",
+    "@codeworkslabs/astro-analytics": "0.1.0"
   },
   "devDependencies": {
     "typescript": "^5.5.0",
